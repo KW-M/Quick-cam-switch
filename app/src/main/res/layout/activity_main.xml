@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:elevation="4dp"
+        >
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center|center_vertical"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse" />
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/app_bar_switch"
+            style="@android:style/Widget.Material.Light.CompoundButton.Switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:text="@string/action_toggle_service"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse" />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <include layout="@layout/content_main" />
+</androidx.appcompat.widget.LinearLayoutCompat><!--<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--tools:context=".MainActivity">-->
+
+    <!--<com.google.android.material.appbar.AppBarLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:fitsSystemWindows="true"--><!--android:theme="@style/AppTheme.AppBarOverlay"--><!--app:expanded="true">-->
+
+    <!--&lt;!&ndash;<androidx.appcompat.widget.Toolbar&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/toolbar"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="200dp"&ndash;&gt;--><!--&lt;!&ndash;android:background="?attr/colorPrimary"&ndash;&gt;--><!--&lt;!&ndash;app:layout_scrollFlags="enterAlways"&ndash;&gt;--><!--&lt;!&ndash;app:popupTheme="@style/AppTheme.PopupOverlay">&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;</androidx.appcompat.widget.Toolbar>&ndash;&gt;--><!--<TextView--><!--android:id="@+id/textView"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:gravity="center"--><!--android:padding="36dp"--><!--android:text="@string/app_name"--><!--android:fitsSystemWindows="false"--><!--android:textAppearance="@style/TextAppearance.AppCompat.Title" />-->
+
+    <!--<androidx.appcompat.widget.SwitchCompat--><!--android:id="@+id/app_bar_switch"--><!--style="@android:style/Widget.Material.Light.CompoundButton.Switch"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:padding="18dp"--><!--android:text="@string/action_toggle_service" />-->
+
+    <!--</com.google.android.material.appbar.AppBarLayout>-->
+
+
+    <!--<com.google.android.material.floatingactionbutton.FloatingActionButton--><!--android:id="@+id/fab"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="bottom|end"--><!--android:layout_margin="@dimen/fab_margin"--><!--app:srcCompat="?attr/actionModeCutDrawable" />-->
+
+
+    <!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->

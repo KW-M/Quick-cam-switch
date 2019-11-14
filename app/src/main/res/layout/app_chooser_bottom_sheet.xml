@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/app_chooser_toolbar"
+        android:background="@color/colorBackgroundDark"
+        android:orientation="horizontal"
+        android:padding="16dp">
+        <ImageButton android:src="@drawable/close_white_24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/circle_ripple"/>
+        <TextView
+            android:id="@+id/AppDisplayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#FFFFFF"
+            android:text="@string/choose_app_prompt"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton android:src="@drawable/search_white_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/circle_ripple" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/app_chooser_search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:visibility="gone"
+        android:background="@color/colorBackgroundDark"
+        android:orientation="horizontal"
+        android:padding="16dp">
+        <ImageButton android:src="@drawable/back_white_24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/circle_ripple"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/choose_app_search_prompt"
+            android:inputType="textShortMessage"
+            android:selectAllOnFocus="true"
+            android:singleLine="true" />
+
+        <ImageButton android:src="@drawable/close_white_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/circle_ripple"/>
+    </LinearLayout>
+    <View android:background="#FFF" android:layout_width="match_parent" android:layout_height="1px"/>
+    <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/appListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="16dp"
+        android:background="@color/colorBackgroundDark"
+        android:paddingBottom="16dp"
+        tools:context=".AppChoiceListDialogFragment"
+        tools:listitem="@layout/app_chooser_app_list_item" />
+</LinearLayout>

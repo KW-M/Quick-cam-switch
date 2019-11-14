@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Switch Cam</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_toggle_service">Service Enabled</string>
+    <string name="choose_app_prompt">Pick an app</string>
+    <string name="choose_app_search_prompt">Search for any app</string>
+</resources>
